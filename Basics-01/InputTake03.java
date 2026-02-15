@@ -16,5 +16,19 @@ public class InputTake03 {
         int sum=num1+num2;
         System.out.println("Sum : "+ sum);
 
+
+        
+       /*  
+        nextInt() => To take Int value
+        next() => To take first word of a String value
+        nextLine() => To take String value
+        nextBoolean() => To take Boolean value
+        nextFloat() => To take Float value
+
+            etc. etc.---->
+
+        */
+        
+
     } 
 }
