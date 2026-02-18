@@ -68,3 +68,27 @@ public class LeetCode01 {
 
     }
 }
+
+
+// Efficiency : O(n) where n is the size of the array.
+// Efficient way :-
+/*
+
+class Solution {
+    public int findNumbers(int[] nums) {
+        int count=0;
+        for(int i=0;i<nums.length;i++) {
+
+            int c=(int)Math.log10(nums[i]);
+            if(c%2==1) {
+
+                count++;
+            }
+        }
+        return count;
+    }
+}
+
+=> Where log10 gives the number of digits in the number and we check if it is odd or even. If it is odd then we increment the count. This way we can find the count of numbers with even number of digits in O(n) time complexity and O(1) space complexity.
+=> Another efficient way is to convert the number to string and check the length of the string. If the length is even then we increment the count. This way we can find the count of numbers with even number of digits in O(n) time complexity and O(1) space complexity.
+*/ 
