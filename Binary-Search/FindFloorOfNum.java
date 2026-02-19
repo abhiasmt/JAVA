@@ -8,6 +8,11 @@ public class FindFloorOfNum {
         boolean found=false;
         int mid=0;
 
+        if (target<arr[start]){
+            System.out.print("Floor value does not exist : -1");
+            return;
+        }
+
         while (start<=end) {
             mid=(start+end)/2;
 

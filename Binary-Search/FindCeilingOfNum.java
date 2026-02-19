@@ -11,6 +11,11 @@ public class FindCeilingOfNum {
         boolean found=false;
         int mid=0;
 
+        if (target>arr[end]){
+            System.out.print("Ceiling value does not exist : -1");
+            return;
+        }
+
         while (start<=end) {
             mid=(start+end)/2;
 
