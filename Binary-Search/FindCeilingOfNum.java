@@ -28,7 +28,7 @@ public class FindCeilingOfNum {
                 start=mid+1;
             }
         }
-        if (found==true) {
+        if (found) {
             System.out.print("Ceiling value : "+arr[mid]);
         }else{
             System.out.print("Ceiling value : "+arr[start]);   
