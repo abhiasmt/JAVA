@@ -47,3 +47,4 @@ public class BSonInfiniteArray {
         BinarySearch(arr, target, 0, 1);
     }
 }
+//Time complexity : O(log n) where n is the index of the target element in the array. In the worst case, we will keep doubling the range until we find the target element or we find an element greater than the target element. So, the time complexity will be O(log n) where n is the index of the target element in the array.
