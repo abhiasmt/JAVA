@@ -46,19 +46,19 @@ public class BSinStrictlySortedMatrix {
             return new int[]{rStart+1,cMid};
         }
         //For 1st sub array:-
-        if (target<arr[rStart][cMid-1]) {
+        if (target<=arr[rStart][cMid-1]) {
             return BinarySearch(arr, rStart, 0, cMid-1, target);
         }
         //For 2nd sub array:-
-        if (target<arr[rStart+1][cMid-1]) {
+        if (target<=arr[rStart+1][cMid-1]) {
             return BinarySearch(arr, rStart+1, 0, cMid-1, target);
         }
         //For 3rd sub array:-
-        if (target>arr[rStart][cMid+1]) {
+        if (target>=arr[rStart][cMid+1] && target<=arr[rStart][col-1]) {
             return BinarySearch(arr, rStart, cMid+1, col-1, target);
         }
         //For 4th sub array:-
-        if (target>arr[rStart+1][cMid+1]) {
+        if (target>=arr[rStart+1][cMid+1]) {
             return BinarySearch(arr, rStart+1, cMid+1, col-1, target);
         }
 
