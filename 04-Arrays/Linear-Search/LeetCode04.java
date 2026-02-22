@@ -16,6 +16,7 @@ Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
 
 */
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class LeetCode04 {
@@ -44,5 +45,6 @@ public class LeetCode04 {
         }
 
         System.out.println(Arrays.toString(runningSum(arr)));
+
     }
 }
